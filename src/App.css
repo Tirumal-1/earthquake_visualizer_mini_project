@@ -1,0 +1,34 @@
+ .app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #232323;
+  color: #fff;
+  min-width: 320px;
+}
+
+ .app-header {
+  padding: 1rem;
+  background-color: #372f1fcc; /* dark slate with 80% opacity for see-through effect */
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #444;
+  color: #fff; /* Ensure text is white for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtle shadow for depth */
+  border-radius: 0 0 12px 12px; /* rounded bottom corners for smooth look */
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  min-height: 0; /* necessary for proper flexbox scrolling */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
