@@ -1,12 +1,32 @@
-# React + Vite
+ Earthquake Visualizer Application
+Overview
+Earthquake Visualizer is an interactive web application designed for Casey, a geography student, to visualize recent worldwide earthquake activity. The app fetches real-time earthquake data from the USGS Earthquake API and displays it on an interactive map using Leaflet, helping Casey to understand seismic patterns visually.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Display recent earthquake events from the past day on an interactive world map
 
-Currently, two official plugins are available:
+Earthquake markers indicate location, magnitude, and time
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Map is zoomable and pannable for detailed exploration
 
-## Expanding the ESLint configuration
+Marker popups show detailed info about each earthquake event
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive design for use on different screen sizes
+
+Technologies Used
+Frontend: React.js with react-leaflet for map integration
+
+API: USGS Earthquake API (https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson)
+
+Mapping Library: Leaflet via react-leaflet
+
+Hosting: Deployed on [CodeSandbox]  https://fmng4l-5173.csb.app/
+
+How to Use
+Open the app to view a global map showing recent earthquakes.
+
+Use zoom and pan controls to navigate the map.
+
+Click on earthquake markers to view detailed data including magnitude, location, and time.
+
+Explore seismic activity patterns interactively.
